@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="./domAccess.js"></script>
+  <script type="text/javascript" src="./contact.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</head>
+
+<body>
+  <div>
+    <h1>Example for Person Data asyncrhonous data</h1>
+    <!-- Can you add a new Field to take json text for person information-->
+    <!-- Idea is to take lot of persons contact from json text-->
+
+    <label>Enter Name:</label> <input id="name" placeholder="enter name">
+    <label>Enter Age:</label> <input id="age" placeholder="enter age">
+    <label>Enter Address:</label> <input id="address" placeholder="enter address">
+    <button id="add" onclick="addPerson();">Add Person</button>
+  </div>
+  <div>
+    <br>
+    <h2>Get Persons List by age</h2>
+    <label>Enter age:</label> <input id="ageCondition" placeholder="enter 0 for all">
+    <button id="ageConditionBtn" onclick="getByAgeCondition();">Get</button>
+
+    <p id="personsList"> empty</p>
+    
+    <h2>Scroll Persons List</h2>
+    <label>Enter Scroll Time in Seconds: </label><input id="scrollTime">
+    <button onClick="onStartScroll();">Start Scroll</button>
+    <button  onClick="onStopScroll();">Stop Scroll</button>
+    <p id="randomScrollText"> empty</p>
+    
+  </div>
+</body>
+</html>
